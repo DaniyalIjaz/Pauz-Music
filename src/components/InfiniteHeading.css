@@ -1,0 +1,50 @@
+@keyframes scroll{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px * 2));
+    }
+}
+.headingSlider{
+    height: 100px;
+    /* margin: auto; */
+    overflow: hidden;
+    position: relative;
+    width: auto;
+    
+
+}
+
+.headingSlider .slide-track{
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 4);
+}
+.headingSlider .headingScroll{
+    height: 100px;
+    width: auto;
+
+}
+.headingScroll h1{
+    height: 100%;
+    font-size: 100px;
+    color: #ae01ff;
+
+}
+
+
+
+
+/* media queries  */
+@media screen and (max-width: 943px) {
+    .headingScroll h1{
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .headingScroll h1{
+        font-size: 30px;
+    }
+}

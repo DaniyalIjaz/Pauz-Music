@@ -1,0 +1,122 @@
+.mainSec{
+    display: flex;
+background-image: url('/public/Images/Background.webp');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+object-fit: cover;
+width: 87vw;
+
+padding: 140px 110px 121px 80px;
+}
+.secHeadings{
+    
+    line-height: 8rem;
+    font-size: 72px;
+}
+.buttonContainer{
+    display: flex;
+    gap: 200px;
+    margin-top: 60px;
+}
+.ticket-btn{
+    font-size: 16px;
+    font-weight: 500;
+    padding: 15px 25px;
+    border-radius: 30px;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    
+}
+.ticket-btn:hover{
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    transition: all ease-in-out .3s;
+}
+.musicfest-btn{
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 35px;
+    padding: 0px 26px;
+    letter-spacing: 6.9px;
+    cursor: text;
+}
+
+.mainSec img{
+    background-repeat: no-repeat;
+/* background-size: cover; */
+/* background-position: center center; */
+object-fit: cover;
+width: 40%;
+height: 5%;
+position: relative;
+top: 140px;
+left: -10px;
+transform: rotateY('180deg');
+animation: musician 5s linear infinite;
+
+}
+
+@keyframes musician{
+    50%{
+        left: 10px;
+        
+    }
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 943px) {
+    .mainSec img{
+        display: none;
+    }
+    .secHeadings h1{
+        font-size: 90px;
+        line-height: 6rem;
+    }
+    .buttonContainer{
+        display: grid;
+        gap: 15px;
+    }
+    .ticket-btn{
+        width: 170px;
+        font-size: 14px;
+    }
+    .musicfest-btn{
+        height: 45px;
+        font-size: 14px;
+        /* font-weight: 500; */
+        width: 365px;
+    }
+  }
+  @media screen and (max-width: 575px){
+    .mainSec{
+        padding: 10px;
+    }
+    .secHeadings{
+        margin-top: 100px;
+
+    }
+    .secHeadings h1{
+        line-height: 4rem;
+        font-size: 50px;
+    }
+    .ticket-btn{
+        /* width: 170px; */
+        height: 45px;
+        width: 130px;
+        font-size: 12px;
+        padding: 10px 1px;
+    }
+    .musicfest-btn{
+        height:43px;
+        width: 220px;
+        font-weight: 600;
+        padding: 0px 15px;
+        font-size: 11px;
+        letter-spacing: 3px;
+        /* font-weight: 500; */
+        /* width: 365px; */
+    }
+  }

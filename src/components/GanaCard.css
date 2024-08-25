@@ -1,0 +1,100 @@
+.ganaCard{
+    border: 1px solid rgb(59, 59, 59);
+    border-radius: 10px;
+    width: 25vw;
+    padding: 20px;
+    display: grid;
+    gap: 15px;
+}
+.company{
+    display: flex;
+    gap: 7px;
+    color: rgb(186, 186, 186);
+    align-items: center;
+}
+.company p:hover{
+    cursor: pointer;
+    color: #246bfd;
+    transition: all ease-in-out .3s;
+
+}
+.ganaCard>h5{
+    font-size: 18px;
+    font-weight: 400;
+    text-wrap: wrap;
+    width: 25vw;
+    cursor: pointer;
+}
+.ganaCard>h5:hover{
+    color: #246bfd;
+    transition: all ease-in-out .3s;
+}
+.companyImg{
+    position: relative;
+    border-bottom: 1px solid rgb(59, 59, 59);
+    padding-bottom: 22px;
+
+}
+.companyImg img{
+    object-fit: cover;
+    position: center center;
+    height: 20vw;
+    max-width: 25vw;
+    overflow: hidden;
+    
+}
+.companyImg h6{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 38px;
+    padding: 17px;
+    border-radius: 50%;
+    text-wrap: wrap;
+    text-align: center;
+    background-color: #246bfd;
+    font-size: 15px;
+    
+}
+.rdmore{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rdmore h4{
+    font-size: 16px;
+    font-weight: 400;
+}
+.rdmore img{
+    /* padding: 6px; */
+    background-color: #246bfd;
+    border-radius: 50%;
+}
+.rdmore h4:hover{
+    color: #246bfd;
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+}
+
+.rdmoreImg:hover{
+    background: linear-gradient(to bottom, #5f92ff, #e600ff);
+    cursor: pointer;
+    transition: all ease-in-out .3s;
+    
+}
+
+
+/* media queries  */
+@media only screen and (max-width: 830px) {
+    .ganaCard{
+        width: 50vw;
+
+    }
+    .companyImg img{
+        max-width: 50vw;
+        height: 50vh;
+    }
+    .ganaCard>h5{
+        width: 50vw;
+    }
+}

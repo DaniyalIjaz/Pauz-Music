@@ -1,0 +1,220 @@
+
+
+
+.CarouselCardMain{
+  margin: 90px;
+  margin-bottom: 0;
+  width: 86vw;
+  background-image: linear-gradient(to right, #262626, #121212);
+  border: 1px solid #262626;
+  border-radius: 10px;
+
+
+  
+  
+}
+
+
+.CarouselCard{
+    padding: 45px 50px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #333333 ;
+  }
+
+.eventbtnn h4{
+    background: transparent;
+    
+    border-radius: 30px;
+    width: 105px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 9px 20px;
+    border: 2px solid #ae01ff;
+    cursor: text;
+    margin-bottom: 18px;
+}
+.eventbtnn h2{
+    font-size: 42px;
+}
+
+
+
+.carouselButtons{
+  display: flex;
+}
+
+/* Carousel buttons css  */
+.button {
+  display: block;
+  position: relative;
+  width: 56px;
+  height: 56px;
+  margin: 0;
+  overflow: hidden;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  border: 0;
+}
+
+.button:before,
+.button:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  inset: 7px;
+}
+
+.button:before {
+  border: 4px solid #f0eeef;
+  transition: opacity 0.4s cubic-bezier(0.77, 0, 0.175, 1) 80ms,
+    transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) 80ms;
+}
+
+.button:after {
+  border: 4px solid #96daf0;
+  transform: scale(1.3);
+  transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
+    transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    opacity: 0;
+}
+
+.button:hover:before,
+.button:focus:before {
+  opacity: 0;
+  transform: scale(0.7);
+  transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
+    transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  
+.button:hover:after,
+.button:focus:after {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.4s cubic-bezier(0.77, 0, 0.175, 1) 80ms,
+    transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) 80ms;
+}
+
+.button-box {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.button-elem {
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin: 17px 18px 0 18px;
+  transform: rotate(180deg);
+  fill: #f0eeef;
+}
+
+.button:hover .button-box,
+.button:focus .button-box {
+  transition: 0.4s;
+  transform: translateX(-56px);
+}
+  
+  
+  
+  .carouselDetails{
+    padding: 45px 50px; 
+    display: flex;
+    /* justify-content: space-evenly; */
+    gap: 60px;
+
+}
+  /* carousel right  */
+.carouselRightSection{
+  width: 48vw;
+  text-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+}
+.carouselRightSection h4{
+  font-size: 22px;
+  color: #5f5f5f;
+  font-weight: 500;
+  line-height: 29px;
+  padding: 14px 0;
+}
+.carouselRightSection h3{
+  font-weight: 500;
+  padding: 14px 0;
+}
+.carouselRightSection h5{
+  color: #5f5f5f;
+  font-size: 17px;
+  font-weight: 500;
+}
+.carouselDetailsImg{
+  position: relative;
+}
+.starSvgs{
+  display: flex;
+  gap: 4px;
+}
+.carouselPositionImg{
+  padding: 20px;
+  height: 50px;
+  width: 50px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  right: -15px;
+  top: 0;
+}
+
+
+
+
+
+
+
+/* media queries  */
+@media screen and (max-width: 950px){
+  .carouselDetails{
+    display: flex;
+    flex-direction: column;
+  }
+  .bracketsCarousel{
+    display: none !important; 
+  }
+  
+  .CarouselCardMain{
+    margin: 60px;
+  }
+  .carouselRightSection{
+    width: 66vw;
+  }
+  .carouselPositionImg{
+    left: 0;
+  }
+  .eventbtnn h4{
+    font-size: 11px;
+    width: 80px;
+  }
+  .eventbtnn h2{
+    font-size: 30px;
+  }
+
+  
+}
+
+
+@media screen and (max-width: 620px){
+  .carouselButtons{
+    display: none;
+  }
+  .CarouselCardMain{
+    margin: 37px;
+  }
+  .carouselRightSection h4{
+    font-size: 18px;
+  }
+
+}

@@ -1,0 +1,16 @@
+.GanaCardsSection{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 15px;
+    margin-bottom: 120px;
+}
+
+
+@media screen and (max-width: 950px) {
+    .GanaCardsSection{
+        flex-direction: column;
+        align-items: center;
+
+    }
+}

@@ -1,0 +1,33 @@
+
+.eventbtn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.eventbtn h4{
+    background: transparent;
+    padding: 10px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 20px;
+    border: 2px solid #ae01ff;
+    cursor: text;
+    margin-top: 90px;
+}
+.eventbtn h3{
+    font-size: 40px;
+    margin: 20px;
+    padding-bottom: 22px;
+}
+
+/* media queries  */
+@media screen and (max-width: 650px){
+    .eventbtn h4{
+        margin-top: 20px;
+    }
+    .eventbtn h3{
+        font-size: 25px;
+    }
+}

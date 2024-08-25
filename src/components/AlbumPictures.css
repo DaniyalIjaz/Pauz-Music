@@ -1,0 +1,86 @@
+.firstrow{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    border-top: 1px solid #414141;
+    padding-top: 110px;
+    
+}
+
+.firstrow a img{
+    width: auto;
+    max-height: 45vh;
+    overflow: hidden;
+    object-fit: cover;
+}
+.firstrow a img:hover{
+    /* background: #414141; */
+    
+}
+.secondrow{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 20px    ;
+}
+.secondrow a img{
+    width: auto;
+    max-height: 45vh;
+    overflow: hidden;
+    object-fit: cover;
+
+}
+
+
+/* media queries  */
+
+@media screen and (max-width: 1250px){
+    .firstrow{
+        gap: 10px;
+
+    }
+    .firstrow a img{
+        width: auto;
+        max-height: 35vh;
+    }
+    .secondrow{
+        padding-top: 10px;
+        gap: 10px;
+    }
+    .secondrow a img{
+        max-height: 35vh;
+    }
+}
+@media screen and (max-width: 970px){
+    .firstrow a img{
+        max-height: 27vh;
+    }
+    .secondrow a img{
+        max-height: 27vh;
+    }
+}
+
+@media screen and (max-width: 770px){
+    .firstrow{
+        flex-direction: column;
+    }
+    .firstrow a img{
+        max-height: 100vh;
+        max-width: 55vw;
+        object-fit: contain;
+    }
+    .secondrow{
+        flex-direction: column;
+    }
+    .secondrow a img{
+        max-height: 100vh;
+        max-width: 55vw;
+        object-fit: contain;
+    }
+   
+}

@@ -1,0 +1,73 @@
+.circlesContainer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 90px;
+    
+}
+.circle-counts{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #626262;
+
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    width: 300px;
+    min-width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+.circle-counts:hover{
+    cursor: pointer;
+    background-color: #ae01ff;
+    background-image: url('./Images/counts-hover.png');
+    object-fit: cover;
+    background-position: center center;
+    transition: all ease-in-out .3s;
+}
+.circle-counts:hover h6{
+    color: white;
+}
+.circle-counts h6{
+    font-size: 22px;
+    font-weight: 300;
+    color: #626262;
+
+}
+.circle-counts h1{
+    font-size: 110px;
+}
+
+/* media queries  */
+
+@media screen and (max-width: 1250px) {
+    .circlesContainer{
+        grid-template-columns: 1fr 1fr;
+        transform: translateX(7%);
+      
+    }
+}
+@media screen and (max-width: 1250px){
+    .circlesContainer{
+        /* display: flex; */
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+    }
+    .circle-counts{
+        width: 250px;
+        min-width: 250px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 720px){
+    .circlesContainer{
+        display: flex;
+        padding-left: 0px;
+    }
+}
